@@ -13,7 +13,7 @@ const Address = () => {
     <div className="flex flex-col items-center justify-center gap-1.5">
       <h3
         onClick={handleClick}
-        className="text-2xl text-white/70 hover:text-white transition-colors cursor-pointer"
+        className="text-xl md:!text-2xl text-white/70 hover:text-white transition-colors cursor-pointer"
       >
         factions.exalted-kingdom.com
       </h3>

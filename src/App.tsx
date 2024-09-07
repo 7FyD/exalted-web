@@ -1,5 +1,5 @@
-import logo from "./assets/logo-nobg.png";
-import storeLogo from "./assets/EK_basic_logo2.png";
+import logo from "./assets/logo-nobg-medium.webp";
+import storeLogo from "./assets/EK-basic-medium.webp";
 import Link from "./components/Link";
 import Status from "./components/Status";
 import Address from "./components/Address";
@@ -7,11 +7,7 @@ import Address from "./components/Address";
 function App() {
   return (
     <div className="flex flex-col items-center justify-start gap-8 min-h-screen">
-      <img
-        src={logo}
-        alt="logo"
-        className="md:w-[325px] sm:w-[300px] w-[250px]"
-      />{" "}
+      <img src={logo} alt="logo" className="md:w-[350px] w-[300px] mx-auto" />{" "}
       <Address />
       <div className="flex flex-col md:!flex-row justify-center items-center gap-32">
         <Link
