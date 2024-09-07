@@ -1,5 +1,7 @@
 import logo from "./assets/logo-nobg-medium.webp";
 import storeLogo from "./assets/EK-basic-medium.webp";
+import voteIcon from "./assets/vote-icon.png";
+import discordIcon from "./assets/discord-icon.png";
 import Link from "./components/Link";
 import Status from "./components/Status";
 import Address from "./components/Address";
@@ -18,17 +20,18 @@ function App() {
           newTab
         />
         <Link
-          imgSrc={storeLogo}
+          imgSrc={discordIcon}
           alt="Discord Logo"
           href="https://exalted-kingdom.com/discord"
           label="DISCORD"
           newTab
         />
         <Link
-          imgSrc={storeLogo}
+          imgSrc={voteIcon}
           alt="Vote Links Logo"
           href="https://exalted-kingdom.com/vote"
           label="VOTE LINKS"
+          className="w-[200px]"
         />
       </div>
       <Status />
