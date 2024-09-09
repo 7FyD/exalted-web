@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
+import { Link as RouteLink } from "react-router-dom";
 
 interface LinkProps {
   imgSrc: string;
@@ -19,8 +20,8 @@ const Link = ({
   className,
 }: LinkProps) => {
   return (
-    <a
-      href={href}
+    <RouteLink
+      to={href}
       target={newTab ? "_blank" : "_self"}
       rel="noopener noreferrer"
     >
@@ -30,7 +31,7 @@ const Link = ({
           {label}
         </Button>
       </div>
-    </a>
+    </RouteLink>
   );
 };
 
